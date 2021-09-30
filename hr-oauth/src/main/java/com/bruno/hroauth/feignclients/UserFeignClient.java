@@ -12,6 +12,6 @@ import com.bruno.hroauth.entities.User;
 public interface UserFeignClient {
 
 	@GetMapping("/search")
-	ResponseEntity<User> findbyEmail(@RequestParam String email);
+	public ResponseEntity<User> findbyEmail(@RequestParam String email);
 
 }
