@@ -1,0 +1,732 @@
+{
+	"info": {
+		"_postman_id": "ecb5b1bc-889a-4eec-af02-dcbb107c9a05",
+		"name": "ms-cource - MicroServiços",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fase - 1",
+			"item": [
+				{
+					"name": "Hr-Worker",
+					"item": [
+						{
+							"name": "All workers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8001/workers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"workers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Worker by Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8001/workers/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"workers",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Hr-Payroll",
+					"item": [
+						{
+							"name": "Payment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/payments/3/days/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"payments",
+										"3",
+										"days",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Fase -2",
+			"item": [
+				{
+					"name": "Hr-Worker",
+					"item": [
+						{
+							"name": "All workers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/hr-worker/workers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"hr-worker",
+										"workers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Worker by Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/hr-worker/workers/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"hr-worker",
+										"workers",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Hr-Payroll",
+					"item": [
+						{
+							"name": "Payment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/hr-payroll/payments/3/days/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"hr-payroll",
+										"payments",
+										"3",
+										"days",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Fase -3",
+			"item": [
+				{
+					"name": "Hr-Worker",
+					"item": [
+						{
+							"name": "All workers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/hr-worker/workers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"hr-worker",
+										"workers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Worker by Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/hr-worker/workers/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"hr-worker",
+										"workers",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show worker configs on console",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/hr-worker/actuator/refresh",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"hr-worker",
+										"actuator",
+										"refresh"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actuator Refresh",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/hr-worker/workers/configs",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"hr-worker",
+										"workers",
+										"configs"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Hr-Payroll",
+					"item": [
+						{
+							"name": "Payment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/hr-payroll/payments/3/days/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"hr-payroll",
+										"payments",
+										"3",
+										"days",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "hr-config-server",
+					"item": [
+						{
+							"name": "hr-worker config default profile",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8888/hr-worker/default",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"hr-worker",
+										"default"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "hr-worker config test profille",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8888/hr-worker/test",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"hr-worker",
+										"test"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Fase -4",
+			"item": [
+				{
+					"name": "Hr-Worker",
+					"item": [
+						{
+							"name": "All workers",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-gateway}}/hr-worker/workers",
+									"host": [
+										"{{api-gateway}}"
+									],
+									"path": [
+										"hr-worker",
+										"workers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Worker by Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-gateway}}/hr-worker/workers/2",
+									"host": [
+										"{{api-gateway}}"
+									],
+									"path": [
+										"hr-worker",
+										"workers",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show worker configs on console",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{api-gateway}}/hr-worker/actuator/refresh",
+									"host": [
+										"{{api-gateway}}"
+									],
+									"path": [
+										"hr-worker",
+										"actuator",
+										"refresh"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actuator Refresh",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-gateway}}/hr-worker/workers/configs",
+									"host": [
+										"{{api-gateway}}"
+									],
+									"path": [
+										"hr-worker",
+										"workers",
+										"configs"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Hr-Payroll",
+					"item": [
+						{
+							"name": "Payment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzM4MjcyNzcsInVzZXJfbmFtZSI6Im5pbmFAZ21haWwuY29tIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9PUEVSQVRPUiJdLCJqdGkiOiI1YjEzYWY4MC02NTAxLTRhMGYtYWY4ZS1kMjIzMjZiNWUxNWMiLCJjbGllbnRfaWQiOiJteWFwcG5hbWUxMjMiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.OyNehyVfghHJmDZJpbQ3VSM515yDhMP91RV9fWlW1c8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-gateway}}/hr-payroll/payments/3/days/5",
+									"host": [
+										"{{api-gateway}}"
+									],
+									"path": [
+										"hr-payroll",
+										"payments",
+										"3",
+										"days",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "hr-config-server",
+					"item": [
+						{
+							"name": "hr-worker config default profile",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config-host}}/hr-worker/default",
+									"host": [
+										"{{config-host}}"
+									],
+									"path": [
+										"hr-worker",
+										"default"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "hr-worker config test profille",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config-host}}/hr-worker/test",
+									"host": [
+										"{{config-host}}"
+									],
+									"path": [
+										"hr-worker",
+										"test"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "hr-user",
+					"item": [
+						{
+							"name": "User by id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-gateway}}/hr-user/users/2",
+									"host": [
+										"{{api-gateway}}"
+									],
+									"path": [
+										"hr-user",
+										"users",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "User by email",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-gateway}}/hr-user/users/search?email=nina@gmail.com",
+									"host": [
+										"{{api-gateway}}"
+									],
+									"path": [
+										"hr-user",
+										"users",
+										"search"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "nina@gmail.com"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "hr-oauth",
+					"item": [
+						{
+							"name": "user by email",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-gateway}}/hr-oauth/users/search?email=nina@gmail.com",
+									"host": [
+										"{{api-gateway}}"
+									],
+									"path": [
+										"hr-oauth",
+										"users",
+										"search"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "nina@gmail.com"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if (responseCode.code >= 200 && responseCode.code < 300) {\r",
+											"    var json = JSON.parse(responseBody);\r",
+											"    postman.setEnvironmentVariable('token', json.access_token);\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{client-secret}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{client-name}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "leia@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "password",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{api-gateway}}/hr-oauth/oauth/token",
+									"host": [
+										"{{api-gateway}}"
+									],
+									"path": [
+										"hr-oauth",
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
